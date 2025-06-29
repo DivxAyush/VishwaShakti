@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <meta content="width=device-width, initial-scale=1.0" name="viewport">
+ <title>Vishwa Shakti</title>
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+
+ <!-- Favicons -->
+ <link href="assets/assetsVishwa/VishwaShakti_Logo.png" rel="icon">
+ <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com" rel="preconnect">
+ <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+ <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+
+ <!-- Vendor CSS Files -->
+ <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+ <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+ <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+ <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+ <!-- Main CSS File -->
+ <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+ <header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container position-relative d-flex align-items-center justify-content-between">
+
+   <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+    <h1 class="sitename">Invent</h1><span>.</span>
+   </a>
+
+   <nav id="navmenu" class="navmenu">
+    <ul>
+     <li><a href="#hero" class="active">Home</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="#services">Services</a></li>
+     <li><a href="#portfolio">Services</a></li>
+     <li><a href="#pricing">Pricing</a></li>
+
+     <li><a href="#contact">Contact</a></li>
+    </ul>
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+   </nav>
+
+   <a class="btn-getstarted" href="#about">Get Started</a>
+
+  </div>
+ </header>
+
+ <main class="main">
+
+  <!-- Testo Section -->
+  <section id="contact" class="contact section">
+
+   <!-- Section Title -->
+   <div class="container section-title" data-aos="fade-up">
+    <h2>Feedback</h2>
+    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+   </div><!-- End Section Title -->
+   <!-- Testimonials Section -->
+   <section id="testimonials" class="testimonials section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+     <div class="testimonials-slider swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 800,
+          "autoplay": { "delay": 5000 },
+          "slidesPerView": 1,
+          "spaceBetween": 30,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "768": { "slidesPerView": 2 },
+            "1200": { "slidesPerView": 3 }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+       <!-- Slides will be added dynamically via JavaScript -->
+      </div>
+      <div class="swiper-pagination"></div>
+     </div>
+    </div>
+   </section>
+
+
+
+
+   <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row">
+     <div class="col-lg-12">
+      <div class="form-wrapper" data-aos="fade-up" data-aos-delay="400">
+       <form role="form" class="php-email-form">
+        <div class="col-md-12 form-group mt-3">
+         <label for="rating" class="form-label">Your Rating:</label>
+         <div id="starRating" class="star-rating">
+          <i class="bi bi-star" data-value="1"></i>
+          <i class="bi bi-star" data-value="2"></i>
+          <i class="bi bi-star" data-value="3"></i>
+          <i class="bi bi-star" data-value="4"></i>
+          <i class="bi bi-star" data-value="5"></i>
+         </div>
+         <input type="hidden" name="rating" id="ratingValue" required>
+        </div>
+        <div class="row">
+         <div class="col-md-6 form-group">
+          <div class="input-group">
+           <span class="input-group-text"><i class="bi bi-person"></i></span>
+           <input type="text" name="name" class="form-control" placeholder="Your name*" required="">
+          </div>
+         </div>
+        </div>
+        <div class="row mt-3">
+
+         <div class="form-group mt-3">
+          <div class="input-group">
+           <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+           <textarea class="form-control" name="message" rows="6" placeholder="Write a message*" required=""></textarea>
+          </div>
+         </div>
+         <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+         </div>
+         <div class="text-center">
+          <button type="submit">Submit Message</button>
+         </div>
+        </div>
+       </form>
+      </div>
+     </div>
+
+    </div>
+
+   </div>
+
+
+  </section><!-- /testo Section -->
+
+ </main>
+
+ <footer id="footer" class="footer light-background">
+
+  <div class="container footer-top">
+   <div class="row gy-4">
+    <div class="col-lg-4 col-md-6 footer-about">
+     <a href="index.html" class="logo d-flex align-items-center">
+      <span class="sitename">MyWebsite</span>
+     </a>
+     <div class="footer-contact pt-3">
+      <p>A108 Adam Street</p>
+      <p>New York, NY 535022</p>
+      <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+      <p><strong>Email:</strong> <span>info@example.com</span></p>
+     </div>
+     <div class="social-links d-flex mt-4">
+      <a href=""><i class="bi bi-twitter-x"></i></a>
+      <a href=""><i class="bi bi-facebook"></i></a>
+      <a href=""><i class="bi bi-instagram"></i></a>
+      <a href=""><i class="bi bi-linkedin"></i></a>
+     </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 footer-links">
+     <h4>Useful Links</h4>
+     <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Terms of service</a></li>
+      <li><a href="#">Privacy policy</a></li>
+     </ul>
+    </div>
+
+    <div class="col-lg-2 col-md-3 footer-links">
+     <h4>Our Services</h4>
+     <ul>
+      <li><a href="#">Web Design</a></li>
+      <li><a href="#">Web Development</a></li>
+      <li><a href="#">Product Management</a></li>
+      <li><a href="#">Marketing</a></li>
+      <li><a href="#">Graphic Design</a></li>
+     </ul>
+    </div>
+
+    <div class="col-lg-2 col-md-3 footer-links">
+     <h4>Hic solutasetp</h4>
+     <ul>
+      <li><a href="#">Molestiae accusamus iure</a></li>
+      <li><a href="#">Excepturi dignissimos</a></li>
+      <li><a href="#">Suscipit distinctio</a></li>
+      <li><a href="#">Dilecta</a></li>
+      <li><a href="#">Sit quas consectetur</a></li>
+     </ul>
+    </div>
+
+    <div class="col-lg-2 col-md-3 footer-links">
+     <h4>Nobis illum</h4>
+     <ul>
+      <li><a href="#">Ipsam</a></li>
+      <li><a href="#">Laudantium dolorum</a></li>
+      <li><a href="#">Dinera</a></li>
+      <li><a href="#">Trodelas</a></li>
+      <li><a href="#">Flexo</a></li>
+     </ul>
+    </div>
+
+   </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+   <p>© <span>Copyright</span> <strong class="px-1 sitename">VishwaShakti</strong> <span>All Rights
+     Reserved</span></p>
+   <div class="credits">
+
+    Designed by <a href="https://ayushkumar.fun/">Ayush Kumar</a>
+   </div>
+  </div>
+
+ </footer>
+
+ <!-- Scroll Top -->
+ <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+   class="bi bi-arrow-up-short"></i></a>
+
+ <!-- Preloader -->
+ <div id="preloader"></div>
+
+ <!-- Vendor JS Files -->
+ <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="assets/vendor/php-email-form/validate.js"></script>
+ <script src="assets/vendor/aos/aos.js"></script>
+ <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+ <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Main JS File -->
+ <script src="assets/js/main.js"></script>
+
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+   const stars = document.querySelectorAll('#starRating i');
+   const ratingInput = document.getElementById('ratingValue');
+   const form = document.querySelector('.php-email-form');
+
+   // Star click event to set rating
+   stars.forEach(star => {
+    star.addEventListener('click', () => {
+     const rating = parseInt(star.getAttribute('data-value'));
+     ratingInput.value = rating;
+
+     // Visual update of stars (fill stars up to selected rating)
+     stars.forEach(s => {
+      if (parseInt(s.getAttribute('data-value')) <= rating) {
+       s.classList.remove('bi-star'); // empty star
+       s.classList.add('bi-star-fill'); // filled star
+      } else {
+       s.classList.remove('bi-star-fill');
+       s.classList.add('bi-star');
+      }
+     });
+    });
+   });
+
+   // Handle form submit with API call
+   form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Validate rating exists
+    if (!ratingInput.value) {
+     alert('Please select a rating');
+     return;
+    }
+
+    // Gather data from form
+    const name = form.querySelector('input[name="name"]').value.trim();
+    const comment = form.querySelector('textarea[name="message"]').value.trim();
+    const rating = parseInt(ratingInput.value);
+
+    if (!name || !comment) {
+     alert('Please fill in all required fields');
+     return;
+    }
+
+    const data = {
+     personName: name,
+     rating: rating,
+     comment: comment
+    };
+
+    try {
+     // Optional: Show loading indicator
+     form.querySelector('.loading').style.display = 'block';
+     form.querySelector('.error-message').textContent = '';
+     form.querySelector('.sent-message').style.display = 'none';
+
+     const response = await fetch('https://localhost:7072/api/Review', {
+      method: 'POST',
+      headers: {
+       'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+     });
+
+     if (!response.ok) {
+      throw new Error(`Error: ${response.statusText}`);
+     }
+
+     // Hide loading, show success message
+     form.querySelector('.loading').style.display = 'none';
+     form.querySelector('.sent-message').style.display = 'block';
+
+     // Optionally reset form and stars
+     form.reset();
+     ratingInput.value = '';
+     stars.forEach(s => {
+      s.classList.remove('bi-star-fill');
+      s.classList.add('bi-star');
+     });
+
+    } catch (error) {
+     form.querySelector('.loading').style.display = 'none';
+     form.querySelector('.error-message').textContent = error.message || 'Something went wrong!';
+    }
+   });
+  });
+ </script>
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+   const sliderWrapper = document.querySelector('.testimonials-slider .swiper-wrapper');
+
+   fetch('https://localhost:7072/api/Review/summary')
+    .then(res => res.json())
+    .then(json => {
+     const users = json?.data?.users || [];
+
+     users.forEach(user => {
+      const { personName, rating, comment, reviewDate } = user;
+      const initial = personName.trim().charAt(0).toUpperCase();
+      const date = new Date(reviewDate).toLocaleDateString('en-IN', {
+       day: 'numeric', month: 'short', year: 'numeric'
+      });
+
+      // Generate stars
+      const stars = Array.from({ length: 5 }, (_, i) =>
+       `<i class="bi ${i < rating ? 'bi-star-fill' : 'bi-star'}"></i>`
+      ).join('');
+
+      const slide = document.createElement('div');
+      slide.className = 'swiper-slide';
+      slide.innerHTML = `
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p><i class="bi bi-quote quote-icon"></i> ${comment}</p>
+            </div>
+            <div class="testimonial-profile">
+              <div class="rating">${stars}</div>
+              <div class="profile-info">
+                <div class="profile-circle">${initial}</div>
+                <div>
+                  <h3>${personName}</h3>
+                  <h4>${date}</h4>
+                </div>
+              </div>
+            </div>
+          </div>`;
+      sliderWrapper.appendChild(slide);
+     });
+
+     // Initialize Swiper
+     new Swiper('.testimonials-slider', {
+      loop: true,
+      speed: 800,
+      autoplay: { delay: 5000 },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      breakpoints: {
+       768: { slidesPerView: 2 },
+       1200: { slidesPerView: 3 }
+      }
+     });
+    })
+    .catch(err => {
+     console.error('Failed to load reviews:', err);
+    });
+  });
+ </script>
+
+
+
+</body>
+
+</html>
