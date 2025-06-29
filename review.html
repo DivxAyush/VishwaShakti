@@ -347,7 +347,7 @@
   document.addEventListener('DOMContentLoaded', () => {
    const sliderWrapper = document.querySelector('.testimonials-slider .swiper-wrapper');
 
-   fetch('https://localhost:7072/api/Review/summary')
+   fetch('https://localhost:7072/api/Review/summary') 
     .then(res => res.json())
     .then(json => {
      const users = json?.data?.users || [];
